@@ -2,8 +2,8 @@
     "name": "leo-unglaub/laravel-baseline",
     "description": "A collection of usefull stuff for Laravel projects.",
     "type": "library",
-    "require": {},
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.6"
     },
     "license": "BSD-4-Clause",
     "autoload": {
