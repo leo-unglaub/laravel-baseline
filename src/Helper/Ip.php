@@ -7,14 +7,14 @@ namespace LeoUnglaub\LaravelBaseline\Helper;
  */
 class Ip
 {
-	protected string $ip = null;
+	protected string $ip = '';
 
 	/**
 	 * Create a new Ip instane.
 	 *
 	 * @return void
 	 */
-	public function __construct(string $ip = null)
+	public function __construct(string $ip)
 	{
 		$this->ip = $ip;
 	}
