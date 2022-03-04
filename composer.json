@@ -3,7 +3,7 @@
     "description": "A collection of usefull stuff for Laravel projects.",
     "type": "library",
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.6"
+        "leo-unglaub/laravel-baseline-dev": "@dev"
     },
     "license": "BSD-4-Clause",
     "autoload": {
@@ -22,8 +22,7 @@
             "providers": [
                 "LeoUnglaub\\LaravelBaseline\\LaravelBaselineServiceProvider"
             ],
-            "aliases": {
-            }
+            "aliases": {}
         }
     }
 }
