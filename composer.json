@@ -3,7 +3,8 @@
     "description": "A collection of usefull stuff for Laravel projects.",
     "type": "library",
     "require-dev": {
-        "leo-unglaub/laravel-baseline-dev": "@dev"
+        "leo-unglaub/laravel-baseline-dev": "@dev",
+        "laravel/framework": "^9.3"
     },
     "license": "BSD-4-Clause",
     "autoload": {
