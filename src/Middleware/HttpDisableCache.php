@@ -16,13 +16,14 @@ class HttpDisableCache
 	 */
 	public function handle(Request $request, Closure $next)
 	{
-		// HTTP 1.0
-		$request->header('Pragma', 'no-cache');
+		/*
+		 * @var \Illuminate\Http\Response
+		 */
+		$response = $next($request);
+		$response->headers->set('Pragma', 'no-cache');
+		$response->headers->set('Cache-Control', 'no-store, no-cache, max-age=-1');
+		$response->headers->set('Expires', '-1');
 
-		// HTTP 1.1
-		$request->header('Cache-Control', 'no-store, no-cache, max-age=-1');
-		$request->header('Expires', '-1');
-
-		return $next($request);
+		return $response;
 	}
 }
