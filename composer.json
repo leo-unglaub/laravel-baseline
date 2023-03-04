@@ -4,7 +4,7 @@
     "type": "library",
     "require-dev": {
         "leo-unglaub/laravel-baseline-dev": "@dev",
-        "laravel/framework": "^9.3"
+        "laravel/framework": "^10.0"
     },
     "license": "BSD-4-Clause",
     "autoload": {
